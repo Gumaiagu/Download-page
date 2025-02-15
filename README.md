@@ -4,7 +4,7 @@ In this project, i'll just make a download page with django.
 
 ## Executing
 
-To execute, you need to have python, or a virtual environviment.
+To execute, you need to have Python and a virtual environviment (this one is not obligatory).
 
 Then, install:
 
