@@ -30,7 +30,7 @@ py manage.py runserver
 
 ## Changing the file
 
-If you want to change the file that you'll download when you click the button, do:
+If you want to change the file that you'll download when you click the button, do inside the download function in download_page/views.py:
 
 * Change the value of "filename" to the name of the file
 * Change "content_type" of HttpResponse to the file type.
