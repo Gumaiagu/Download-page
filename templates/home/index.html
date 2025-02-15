@@ -30,6 +30,12 @@
             background-color: rgb(179, 179, 179);
         }
     </style>
+
+    <script>
+        function download() {
+            window.location.replace({% url 'download-page:download' %});
+        };
+    </script>
 </head>
 <body>
     <div id="title">
@@ -37,7 +43,7 @@
     </div>
     <div id="content">
         <p>Hi, this is a simple django project that will just download a file to the user's computer.</p>
-        <button id="download" onclick="window.location.replace({% url 'download-page:download' %})">download</button>
+        <button id="download" onclick="download()">download</button>
     </div>
 </body>
 </html>
