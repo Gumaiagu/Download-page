@@ -1,11 +1,8 @@
-from django.shortcuts import render
-import mimetypes
+from django.http import HttpResponse
 
 def download(request):
-    fl_path = '/home/gustavo/Programacao/Lenguages/learning/learning_django_projects/download_page/download_page/static/file'
     filename = 'file.txt'
 
-    mime_type, _ = mimetypes.guess_type(fl_path)
-    response = render(request, 'home/index.html', content_type=mime_type)
+    response = HttpResponse('test', content_type='txt')
     response['Content-Disposition'] = f"attachment; filename={filename}"
     return response
